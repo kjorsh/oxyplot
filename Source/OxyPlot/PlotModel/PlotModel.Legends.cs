@@ -414,6 +414,8 @@ namespace OxyPlot
 
                         y = top;
                         x += maxItemWidth + this.LegendColumnSpacing;
+                        if( x > LegendMaxWidth )
+                            break;
                         maxItemWidth = 0;
                     }
 
